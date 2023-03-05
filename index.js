@@ -19,7 +19,7 @@ client.on("messageCreate", (message) => {
 
   if (message.content === "ff15")
     message.reply(({
-      content: "Hi from bot",
+      content: "probably a noice idea ...",
     }))
 })
 
