@@ -1,4 +1,6 @@
-const { Client, GatewayIntentBits } = require('discord.js')
+const { Client, GatewayIntentBits } = require("discord.js")
+const keepAlive = require("./server")
+
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
@@ -21,4 +23,5 @@ client.on("messageCreate", (message) => {
     }))
 })
 
+keepAlive()
 client.login(process.env['TOKEN'])
