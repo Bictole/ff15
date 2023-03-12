@@ -1,6 +1,6 @@
 const { Client, GatewayIntentBits } = require("discord.js")
 const keepAlive = require("./server")
-const addEmote = require('./addEmote')
+const { addEmote } = require('./emote')
 
 const client = new Client({
   intents: [
@@ -26,11 +26,10 @@ client.on("messageCreate", (message) => {
       content: "probably a noice idea ...",
     }))
 
-  if (Math.random() < 0.15)
-    {
-        addEmote(name, messageContent, msg);
-        console.log(`Reacted on ${name} message telling ${messageContent}`);
-    }
+  if (Math.random() < 0.3) {
+    addEmote(name, messageContent, message);
+    console.log(`Reacted on ${name} message telling ${messageContent}`);
+  }
 })
 
 keepAlive()
