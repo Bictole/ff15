@@ -26,7 +26,7 @@ client.on("messageCreate", (message) => {
       content: "probably a noice idea ...",
     }))
 
-  if (Math.random() < 0.3) {
+  if (Math.random() < 0.10) {
     addEmote(name, messageContent, message);
     console.log(`Reacted on ${name} message telling ${messageContent}`);
   }
