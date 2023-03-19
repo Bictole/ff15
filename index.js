@@ -1,7 +1,7 @@
 const { Client, GatewayIntentBits } = require("discord.js")
 const keepAlive = require("./server")
 const { addEmote } = require('./emote')
-const { kivaou } = require('./kivaou')
+const { kivaou, kivaouTryhard } = require('./kivaou')
 
 const client = new Client({
   intents: [
@@ -30,8 +30,13 @@ client.on("messageCreate", (message) => {
   }
 
   if (message.content === "kivaou") {
-    kivaou(message)
+    kivaou(message);
     console.log(`[KIVAOU] by ${name}`);
+  }
+
+  if (message.content === "kivaou tryhard") {
+    kivaouTryhard(message);
+    console.log(`[KIVAOUTRYHARD] by ${name}`)
   }
 
   if (Math.random() < 0.10) {
