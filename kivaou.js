@@ -8,8 +8,15 @@ function kivaou(message) {
   los_boyos.sort(() => Math.random() - 0.5);
 
   let champs = [];
+  let indexes = [];
   for (let i = 0; i < 5; i++) {
     let randomInt = Math.floor(Math.random() * Object.keys(champions.data).length);
+
+    while (indexes.includes(randomInt)) {
+      randomInt = Math.floor(Math.random() * Object.keys(champions.data).length);
+    }
+
+    indexes.push(randomInt);
 
     let i = 0;
     for (let champion in champions.data) {
