@@ -2,6 +2,7 @@ const { Client, GatewayIntentBits } = require("discord.js")
 const keepAlive = require("./server")
 const { addEmote } = require('./emote')
 const { kivaou, kivaouTryhard } = require('./kivaou')
+const { anygame } = require('./anygame')
 
 var fs = require('fs');
 const DateDiff = require("date-diff").default;
@@ -57,7 +58,12 @@ client.on("messageCreate", (message) => {
 
   if (message.content === "kivaou tryhard") {
     kivaouTryhard(message);
-    console.log(`INFO [KIVAOUTRYHARD] by ${name}`)
+    console.log(`INFO [KIVAOUTRYHARD] by ${name}`);
+  }
+
+  if (message.content === "ff or any game ?") {
+    anygame(message);
+    console.log(`INFO [ANYGAME] by ${name}`);
   }
 
   if (message.content.includes("sin") || message.content.includes("cos")) {
