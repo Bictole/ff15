@@ -38,8 +38,14 @@ client.on("messageCreate", (message) => {
   let name = message.author.username.toLowerCase()
 
   if (message.content === "ff15") {
+    let res = '';
+    res += "probably a noice idea ...\n\n"
+    res += "Few cmd :\n"
+    res += "kivaou --> random roles and champs on league\n"
+    res += "kivaou tryhard --> same as kivaou but champs pretty accurate on roles\n"
+    res += "sincos --> to know when you used sin or cos the last time\n"
     message.reply(({
-      content: "probably a noice idea ...",
+      content: res,
     }))
     console.log(`INFO [FF15] by ${name}`);
   }
