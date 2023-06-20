@@ -13,21 +13,9 @@ The ff15 repository contains the code for a personal discord server, of the famo
 
 ## Usage and commands
 
-There are few ***INT***eresting commands available with this bot.
+There are few ***INT***eresting commands available with this bot, here is one example :
 
-==> The first one is `ff15` to check that the bot is pretty much alive
-
-<img src="https://github.com/Bictole/ff15/blob/main/images/cmd_ff15.png" alt="ff15 ff15 cmd">
-
- It then answers you by a nice advice ...
- 
- ==> The `kivaou` command to know kivaou in the team : 
- 
- <img src="https://github.com/Bictole/ff15/blob/main/images/cmd_kivaou.png" alt="ff15 kivaou cmd">
-
-This one take some random champions and assign them properly to the kivaou team with random roles.
-
-==> The `kivaou tryhard` command, for the g@amers :
+==> The `kivaou tryhard` command, for the g@mers :
 
  <img src="https://github.com/Bictole/ff15/blob/main/images/cmd_kivaouTryhard.png" alt="ff15 kivaouTryhard cmd">
 
